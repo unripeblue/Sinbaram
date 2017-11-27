@@ -2,6 +2,7 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -50,6 +51,7 @@
                     </LinearLayout>
 
                     <ImageView
+                        android:id="@+id/settingBtn"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@mipmap/ic_launcher_round" />
@@ -109,7 +111,7 @@
 
             <fragment
                 android:id="@+id/memberFragment"
-                class="kr.co.tjeit.tis.MenuMemberFragment"
+                class="com.tje.sinbaram.MenuMemberFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:layout="@layout/frag_member_navi" />
