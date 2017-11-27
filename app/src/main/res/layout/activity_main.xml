@@ -8,94 +8,6 @@
     android:orientation="vertical"
     tools:context="com.tje.sinbaram.MainActivity">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:background="#FFFFFF"
-                android:orientation="vertical"
-                android:padding="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/menuNaviBtn"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:padding="10dp"
-                        android:src="@drawable/black_ailgn" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:gravity="center">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/sin_b" />
-                    </LinearLayout>
-
-                    <ImageView
-                        android:id="@+id/settingBtn"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@mipmap/ic_launcher_round" />
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="350dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/main_img" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="13dp"
-                    android:text="신바람 하우스를 찾아 주셔서 고맙습니다.\n
-17년 전통의 광주 숯불 한방생오리와 돼지갈비 맛의 전통명가 신바람하우스입니다. 신선하고 좋은 재료를 이용하여 직접 만들고 있습니다.
-
-새로운 모습으로 단장하여 더욱 쾌적한 환경과 서비스, 그리고 최고의 맛으로 고객 여러분께 항상 미식의 만족감과 좋은 추억을 선사해 드릴 수 있도록 최선을 다하겠습니다. 항상 최상의맛과 서비스로 친절하게 고객 한분한분께 정성을 다할 것을 약속 드리며, 최상급의 재료로 더 큰 만족을 드리겠습니다.
-
-고객여러분 가정에 건강과 행복이 가득하시길 기원합니다. 처음부터 끝까지 변함없는 친절한 서비스와 최상의맛으로 정성껏 모시겠습니다.
-
-감사합니다.
-
-
-" />
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-
-    </FrameLayout>
-
     <android.support.design.widget.NavigationView
         android:id="@+id/naviView"
         android:layout_width="200dp"
@@ -107,17 +19,170 @@
             android:id="@+id/memberLatout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="gone">
+            android:visibility="visible">
 
             <fragment
-                android:tag="memberFragment"
                 class="com.tje.sinbaram.MenuMemberFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:tag="memberFragment"
                 tools:layout="@layout/frag_member_navi" />
         </LinearLayout>
 
 
     </android.support.design.widget.NavigationView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/menuNaviBtn"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:padding="10dp"
+                                android:src="@drawable/black_ailgn" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/sin_b" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/settingBtn"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@mipmap/ic_launcher_round" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="300dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/main_img" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="13dp"
+                            android:text="신바람 하우스를 찾아 주셔서 감사합니다.\n
+17년 전통의 광주 숯불 한방생오리와 돼지갈비 맛의 전통명가 신바람하우스입니다. 신선하고 좋은 재료를 이용하여 직접 만들고 있습니다.
+
+새로운 모습으로 단장하여 더욱 쾌적한 환경과 서비스, 그리고 최고의 맛으로 고객 여러분께 항상 미식의 만족감과 좋은 추억을 선사해 드릴 수 있도록 최선을 다하겠습니다. 항상 최상의맛과 서비스로 친절하게 고객 한분한분께 정성을 다할 것을 약속 드리며, 최상급의 재료로 더 큰 만족을 드리겠습니다.
+
+고객여러분 가정에 건강과 행복이 가득하시길 기원합니다. 처음부터 끝까지 변함없는 친절한 서비스와 최상의 맛으로 정성껏 모시겠습니다.
+
+감사합니다." />
+
+                        <TextView
+                            android:layout_margin="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가게 내부 소개"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/hall_img"
+                            android:layout_width="350dp"
+                            android:layout_height="280dp" />
+
+                        <TextView
+                            android:layout_margin="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="홀 사진입니다. 천장부터 바닥까지 나무를 테마로 한 인테리어로 운치있는 식사를 즐기실 수 있습니다."/>
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/table_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="350dp" />
+
+                        <TextView
+                            android:layout_margin="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="테이블입니다. 원형 대나무 탁자에 환기통도 대나무로 맞춰져 있습니다. 오붓하게 식사할 수 있는 보통 테이블부터, 최대 10인까지 수용할 수 있는 넓은 테이블도 있어 단체 예약도 OK!"/>
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/room_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="350dp" />
+
+                        <TextView
+                            android:layout_margin="13dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="방 사진입니다. 좌식 테이블을 선호하시는 분, 자녀 동반 가족분들이 주로 이용하시는 곳입니다. 대나무 테이블과 환기통은 홀과 동일합니다."/>
+
+                        <ImageView
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:src="@mipmap/ic_launcher"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 
 </android.support.v4.widget.DrawerLayout>
