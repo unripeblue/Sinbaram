@@ -110,7 +110,7 @@
             android:visibility="gone">
 
             <fragment
-                android:id="@+id/memberFragment"
+                android:tag="memberFragment"
                 class="com.tje.sinbaram.MenuMemberFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
