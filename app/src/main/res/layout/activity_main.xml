@@ -8,29 +8,6 @@
     android:orientation="vertical"
     tools:context="com.tje.sinbaram.MainActivity">
 
-    <android.support.design.widget.NavigationView
-        android:id="@+id/naviView"
-        android:layout_width="250dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true">
-
-        <LinearLayout
-            android:id="@+id/memberLatout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="visible">
-
-            <fragment
-                class="com.tje.sinbaram.MenuMemberFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:tag="memberFragment"
-                tools:layout="@layout/frag_member_navi" />
-        </LinearLayout>
-
-
-    </android.support.design.widget.NavigationView>
 
     <ScrollView
         android:id="@+id/mainScrollView"
@@ -88,7 +65,7 @@
                                 android:id="@+id/settingBtn"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
-                                android:src="@mipmap/ic_launcher_round" />
+                                android:src="@drawable/setting_icon" />
                         </LinearLayout>
 
 
@@ -100,23 +77,23 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:layout_marginBottom="5dp"
-                            android:textSize="13sp"
-                            android:layout_marginTop="5dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="*메뉴와 회원 정보 보기, 예약은 왼쪽 상단 버튼을 눌러 주세요!"
                             android:textColor="#FF3333"
-                            android:text="*메뉴와 회원 정보 보기, 예약은 왼쪽 상단 버튼을 눌러 주세요!"/>
+                            android:textSize="13sp" />
 
                         <TextView
-                            android:textSize="17sp"
-                            android:layout_margin="15dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
                             android:text="가게 소개"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -138,24 +115,24 @@
 감사합니다." />
 
                         <TextView
-                            android:layout_margin="15dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
                             android:text="내부 소개"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
 
                         <ImageView
-                            android:layout_gravity="center"
-                            android:src="@drawable/hall_img"
                             android:layout_width="350dp"
-                            android:layout_height="280dp" />
+                            android:layout_height="280dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/hall_img" />
 
                         <TextView
-                            android:layout_margin="13dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="홀 사진입니다. 천장부터 바닥까지 나무를 테마로 한 인테리어로 운치있는 식사를 즐기실 수 있습니다."/>
+                            android:layout_margin="13dp"
+                            android:text="홀 사진입니다. 천장부터 바닥까지 나무를 테마로 한 인테리어로 운치있는 식사를 즐기실 수 있습니다." />
 
                         <ImageView
                             android:id="@+id/imageView"
@@ -165,31 +142,30 @@
                             android:src="@drawable/table_img" />
 
                         <TextView
-                            android:layout_margin="13dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="테이블입니다. 원형 대나무 탁자에 환기통도 대나무로 맞춰져 있습니다. 오붓하게 식사할 수 있는 보통 테이블부터, 최대 10인까지 수용할 수 있는 넓은 테이블도 있어 단체 예약도 OK!"/>
+                            android:layout_margin="13dp"
+                            android:text="테이블입니다. 원형 대나무 탁자에 환기통도 대나무로 맞춰져 있습니다. 오붓하게 식사할 수 있는 보통 테이블부터, 최대 10인까지 수용할 수 있는 넓은 테이블도 있어 단체 예약도 OK!" />
 
                         <ImageView
-                            android:layout_marginTop="10dp"
-                            android:src="@drawable/room_img"
                             android:layout_width="wrap_content"
-                            android:layout_height="350dp" />
+                            android:layout_height="350dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/room_img" />
 
                         <TextView
-                            android:layout_margin="13dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="방 사진입니다. 좌식 테이블을 선호하시는 분, 자녀 동반 가족분들이 주로 이용하시는 곳입니다. 대나무 테이블과 환기통은 홀과 동일합니다."/>
+                            android:layout_margin="13dp"
+                            android:text="방 사진입니다. 좌식 테이블을 선호하시는 분, 자녀 동반 가족분들이 주로 이용하시는 곳입니다. 대나무 테이블과 환기통은 홀과 동일합니다." />
 
                         <ImageView
                             android:id="@+id/mainBtn"
-                            android:layout_margin="10dp"
-                            android:layout_gravity="center"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/top_button"/>
-
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/top_button" />
 
 
                     </LinearLayout>
@@ -204,6 +180,31 @@
 
 
     </ScrollView>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/naviView"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/memberLatout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <fragment
+                class="com.tje.sinbaram.MenuMemberFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="memberFragment"
+                tools:layout="@layout/frag_member_navi" />
+        </LinearLayout>
+
+
+    </android.support.design.widget.NavigationView>
 
 
 </android.support.v4.widget.DrawerLayout>

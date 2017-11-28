@@ -53,5 +53,21 @@ public class MenuMemberFragment extends Fragment {
             }
         });
 
+        reservationLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ReservationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        eventpageLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), EventActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
