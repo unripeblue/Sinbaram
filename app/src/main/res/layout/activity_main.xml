@@ -33,6 +33,7 @@
     </android.support.design.widget.NavigationView>
 
     <ScrollView
+        android:id="@+id/mainScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -163,11 +164,12 @@
                             android:text="방 사진입니다. 좌식 테이블을 선호하시는 분, 자녀 동반 가족분들이 주로 이용하시는 곳입니다. 대나무 테이블과 환기통은 홀과 동일합니다."/>
 
                         <ImageView
+                            android:id="@+id/mainBtn"
                             android:layout_margin="10dp"
                             android:layout_gravity="center"
-                            android:layout_width="300dp"
+                            android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:src="@mipmap/ic_launcher"/>
+                            android:src="@drawable/top_button"/>
 
 
 
