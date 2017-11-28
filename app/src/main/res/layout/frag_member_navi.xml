@@ -6,9 +6,9 @@
 
 
     <LinearLayout
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="fill_parent"
-        android:background="#949599"
+        android:background="#795142"
         android:orientation="vertical"
         android:weightSum="10">
 
@@ -29,9 +29,10 @@
                     android:gravity="center">
 
                     <TextView
+                        android:id="@+id/userNameTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="보유 Cash"
+                        android:text="비회원"
                         android:textColor="@color/white"
                         android:textSize="22sp"
                         android:textStyle="bold" />
@@ -40,11 +41,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:background="@drawable/cash_money_box"
-                        android:padding="5dp"
-                        android:text="4,200원"
+                        android:text="님"
                         android:textColor="@color/white"
-                        android:textSize="16sp" />
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <ImageView
@@ -68,116 +68,15 @@
             android:layout_height="0dp"
             android:layout_weight="3"
             android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="보유 주차권"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+            android:orientation="vertical"
+            android:weightSum="1">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@color/white"
-                android:orientation="vertical"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="E-Mart 강남점"
-                    android:textColor="@color/black" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="5dp"
-                    android:background="#D2D3D5" />
-
-                <LinearLayout
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="날짜"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="9월 14일"
-                        android:textColor="@color/black" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="5dp"
-                    android:background="#D2D3D5" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/cash_money_box"
-                        android:paddingLeft="5dp"
-                        android:paddingRight="5dp"
-                        android:text="예약취소"
-                        android:textColor="@color/black"
-                        android:textSize="12sp" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="보유 주차권 목록"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#D2D3D5" />
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_weight="0.76">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -199,10 +98,11 @@
                         android:src="@drawable/white_phone" />
 
                     <TextView
+                        android:id="@+id/userPhoneTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:text="010-6442-6421"
+                        android:text=" - "
                         android:textColor="@color/white" />
                 </LinearLayout>
 
@@ -225,10 +125,11 @@
                         android:src="@drawable/white_email" />
 
                     <TextView
+                        android:id="@+id/userMailTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:text="zeigarnik93@naver.com"
+                        android:text=" - "
                         android:textColor="@color/white" />
                 </LinearLayout>
 
@@ -248,18 +149,26 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/white_car" />
+                        android:src="@drawable/white_star" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:text="서울 12 가 3456"
+                        android:text="보유쿠폰 : "
                         android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/userCouponTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="- 개"
+                        android:textColor="@color/white" />
+
                 </LinearLayout>
 
             </LinearLayout>
-
         </LinearLayout>
 
         <TextView
@@ -268,48 +177,81 @@
             android:background="#D2D3D5" />
 
         <LinearLayout
+            android:id="@+id/menuViewLayout"
+            android:background="#c7a069"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
-            android:layout_weight="3">
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:orientation="horizontal">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="5dp">
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_gravity="left"
-                        android:layout_marginLeft="10dp"
-                        android:src="@drawable/question_white" />
-
-                    <TextView
-                        android:id="@+id/customcenterBtn"
-                        android:padding="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="25dp"
-                        android:text="고객 문의 센터"
-                        android:textColor="@color/white"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-                </FrameLayout>
-            </LinearLayout>
+                android:text="신바람하우스\n메뉴 보기"
+                android:textColor="#775749"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#D2D3D5" />
+
+
+        <LinearLayout
+            android:id="@+id/reservationLayout"
+            android:background="#ffbf48"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신바람하우스\n예약 하기"
+                android:textColor="#775749"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#D2D3D5" />
+
+
+        <LinearLayout
+            android:id="@+id/eventpageLayout"
+            android:background="#ff9a3f"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이벤트 페이지"
+                android:textColor="#775749"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
     </LinearLayout>
+
 </LinearLayout>

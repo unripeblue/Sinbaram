@@ -99,11 +99,29 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                        <TextView
+                            android:layout_marginBottom="5dp"
+                            android:textSize="13sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#FF3333"
+                            android:text="*메뉴와 회원 정보 보기, 예약은 왼쪽 상단 버튼을 눌러 주세요!"/>
+
+                        <TextView
+                            android:textSize="17sp"
+                            android:layout_margin="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="가게 소개"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="300dp"
                             android:layout_gravity="center"
-                            android:layout_marginTop="15dp"
                             android:src="@drawable/main_img" />
 
                         <TextView
@@ -123,7 +141,7 @@
                             android:layout_margin="15dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="가게 내부 소개"
+                            android:text="내부 소개"
                             android:textStyle="bold"
                             android:textColor="@color/black"/>
 
@@ -140,10 +158,11 @@
                             android:text="홀 사진입니다. 천장부터 바닥까지 나무를 테마로 한 인테리어로 운치있는 식사를 즐기실 수 있습니다."/>
 
                         <ImageView
-                            android:layout_marginTop="10dp"
-                            android:src="@drawable/table_img"
+                            android:id="@+id/imageView"
                             android:layout_width="wrap_content"
-                            android:layout_height="350dp" />
+                            android:layout_height="350dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/table_img" />
 
                         <TextView
                             android:layout_margin="13dp"
