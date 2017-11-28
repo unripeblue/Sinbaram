@@ -22,7 +22,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SignupActivity"></activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".ReservationActivity" />
+        <activity android:name=".EventActivity"></activity>
     </application>
 
 </manifest>
