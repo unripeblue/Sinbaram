@@ -82,9 +82,9 @@
                             android:layout_gravity="center"
                             android:layout_marginBottom="5dp"
                             android:layout_marginTop="5dp"
-                            android:text="*메뉴와 회원 정보 보기, 예약은 왼쪽 상단 버튼을 눌러 주세요!"
+                            android:text="↑ 메뉴와 회원 정보 보기, 예약은 왼쪽 상단 버튼을 눌러 주세요!"
                             android:textColor="#FF3333"
-                            android:textSize="13sp" />
+                            android:textSize="13.5sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
