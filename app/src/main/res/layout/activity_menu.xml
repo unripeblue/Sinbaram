@@ -4,8 +4,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tje.sinbaram.MenuActivity"
+    android:background="@color/black"
     android:orientation="vertical"
-    android:background="#000000">
+    tools:context="com.tje.sinbaram.MenuActivity">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/tab1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:tag="0">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:text="한방오리백숙 (1마리, 55,000)"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/ori_01" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="21dp"
+                                android:text="오리백숙에는 필수아미노산이 많아 지친 몸의 기력 회복에 아주 좋습니다. 기운이 쇠하고 식욕이 없을 때 기력 증진에 아주 좋은 보양식입니다. 각종 한약재와 능이버섯을 넣고 달여 기름기가 적고 담백합니다.
+재료 : 능이버섯, 황기, 당귀, 청궁, 마늘, 생강, 무, 대파뿌리 "
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:text="한방오리생구이 (1마리, 35,000)"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="190dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/ori_02" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="21dp"
+                                android:text="오리고기는 단백질과 불포화지방산이 풍부하여 피부 건강, 기력 회복, 혈관질환 예방 및 다이어트 시 영양보충으로도 좋습니다. 신바람하우스의 한방오리 생구이는 12가지 이상의 약재로 염지하여 뛰어난 맛을 자랑합니다.
+(염지액)재료 : 황기, 구기자, 녹곽, 당귀, 감초, 영지버섯, 계피, 청궁, 통후추, 생강, 양파, 대파 "
+                                android:textColor="@color/white" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tab2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:tag="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="사이드메뉴" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="500dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@mipmap/ic_launcher_round" />
+
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </TabHost>
+
 
 </LinearLayout>

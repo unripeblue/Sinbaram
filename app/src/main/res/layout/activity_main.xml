@@ -196,7 +196,7 @@
             android:visibility="visible">
 
             <fragment
-                class="com.tje.sinbaram.MenuMemberFragment"
+                class="com.tje.sinbaram.HamburgerMenuFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:tag="memberFragment"

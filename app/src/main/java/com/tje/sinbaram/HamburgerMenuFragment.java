@@ -14,7 +14,7 @@ import android.widget.TextView;
  * Created by the on 2017-09-14.
  */
 
-public class MenuMemberFragment extends Fragment {
+public class HamburgerMenuFragment extends Fragment {
 
     private android.widget.TextView customcenterBtn;
     private TextView textView;
