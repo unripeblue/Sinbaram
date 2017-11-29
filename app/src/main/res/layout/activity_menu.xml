@@ -56,7 +56,7 @@
 
                             <ImageView
                                 android:layout_width="match_parent"
-                                android:layout_height="220dp"
+                                android:layout_height="190dp"
                                 android:layout_marginTop="5dp"
                                 android:src="@drawable/ori_01" />
 
@@ -91,6 +91,94 @@
 (염지액)재료 : 황기, 구기자, 녹곽, 당귀, 감초, 영지버섯, 계피, 청궁, 통후추, 생강, 양파, 대파 "
                                 android:textColor="@color/white" />
 
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:text="오리훈제구이 / 훈제찜 (1마리, 40,000)"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="190dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/ori_03" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="21dp"
+                                android:text="훈제오리는 오리고기 특유의 미세한 노린내를 잡아 오리고기를 처음 드시는 분들도 부담 없이 드실 수 있습니다. 신바람하우스의 오리훈제구이와 훈제찜은 단호박과 같이 훈제하여 달콤하며 식이섬유소가 풍부하여 변비예방에도 효과적입니다. "
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:text="오리탕 (중, 반마리, 25,000)\n오리탕 (대, 한마리, 40,000)"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="190dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/ori_04" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="21dp"
+                                android:text="오리탕은 냄새가 나지 않고 담백한 맛을 냅니다. 신바람하우스의 오리탕은 고기가 푸짐하고 깔끔하고 진한 국물맛을 느끼실 수 있습니다. 기운이 없을 때에도, 음주 후 해장용으로도 아주 일품입니다. "
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:text="돼지갈비 (1인분, 250g 12,000)"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="190dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/ori_05" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="21dp"
+                                android:text="신바람하우스의 돼지갈비는 전국 우수 축산물 브랜드에 선정된 ‘김성주가 추천하는 부경양돈농협 포크밸리’ 돼지고기를 사용하여 고소한 맛이 일품입니다. 육질이 쫄깃하여 풍미가 뛰어나며 감칠맛이 있습니다. "
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:text="오겹삼겹살 (1인분, 300g 12,000)"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="190dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/ori_06" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="21dp"
+                                android:text="신바람하우스의 오겹살은 목우촌 고기를 사용하여 육질이 부드럽고 쫀득쫀득합니다. 기본으로 제공되는 쌈무와 야채 등과 함께 드시면 더욱 맛있습니다. "
+                                android:textColor="@color/white" />
+
 
                         </LinearLayout>
 
@@ -104,13 +192,47 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="사이드메뉴" />
+                                android:layout_margin="15dp"
+                                android:text="약밥 (2~3인분, 15,000)"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
 
                             <ImageView
                                 android:layout_width="match_parent"
-                                android:layout_height="500dp"
+                                android:layout_height="190dp"
                                 android:layout_marginTop="5dp"
-                                android:src="@mipmap/ic_launcher_round" />
+                                android:src="@drawable/side_01" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="21dp"
+                                android:text="신바람하우스의 약밥에는 일반적인 약밥과는 다른 당귀, 감초, 황기 등 총 16가지 이상의 한약재가 들어갑니다. 밥솥에 10분 이상 뜸을 들여서 만들어지기 때문에 충분한 여유를 두고 주문하시는 게 좋습니다. *많은 분들이 찾으시는 인기 메뉴입니다.
+재료 :　당귀, 감초, 황기, 청궁, 녹곽, 대추, 밤, 은행, 호박씨, 해바라기, 건포도, 무화과, 검정깨, 서리태, 계피,호박 등 "
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="15dp"
+                                android:text="오리만두 (10개, 7,000)"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="190dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/side_02" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="21dp"
+                                android:text="만두소에 오리고기가 들어간 오리만두입니다. 메인 메뉴로 부족할 때, 아이들 간식 등으로 좋습니다. "
+                                android:textColor="@color/white" />
 
 
                         </LinearLayout>

@@ -27,11 +27,11 @@ public class MenuActivity extends BaseActivity {
     private void makeTabHost() {
         tabHost.setup();
 
-        TabHost.TabSpec ts1 = tabHost.newTabSpec("tab1").setIndicator("메인요리");
+        TabHost.TabSpec ts1 = tabHost.newTabSpec("tab1").setIndicator("메인 요리");
         ts1.setContent(R.id.tab1);
         tabHost.addTab(ts1);
 
-        TabHost.TabSpec ts2 = tabHost.newTabSpec("tab2").setIndicator("사이드/음료");
+        TabHost.TabSpec ts2 = tabHost.newTabSpec("tab2").setIndicator("사이드 / 음료");
         ts2.setContent(R.id.tab2);
         tabHost.addTab(ts2);
 
