@@ -25,7 +25,8 @@
         <activity android:name=".SignupActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".ReservationActivity" />
-        <activity android:name=".EventActivity"></activity>
+        <activity android:name=".EventActivity" />
+        <activity android:name=".ReservationListActivity"></activity>
     </application>
 
 </manifest>

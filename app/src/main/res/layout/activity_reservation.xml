@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="30dp"
         android:orientation="vertical">
 
         <TextView
@@ -30,28 +30,32 @@
         android:orientation="vertical">
 
         <FrameLayout
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="10dp">
 
             <EditText
-                android:id="@+id/userNameEdt"
+                android:id="@+id/nameEdt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gray_boader_white_round_box"
-                android:hint="예약 대표 이름"
-                android:inputType="number"
+                android:hint="예약자명"
+                android:inputType="text"
                 android:padding="12dp"
                 android:textSize="13sp" />
 
         </FrameLayout>
 
         <FrameLayout
-            android:layout_width="300dp"
-            android:layout_height="45dp">
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <EditText
-                android:id="@+id/userPhoneNumEdt"
+                android:id="@+id/phoneEdt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gray_boader_white_round_box"
@@ -63,8 +67,10 @@
         </FrameLayout>
 
         <FrameLayout
-            android:layout_width="300dp"
-            android:layout_height="45dp">
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <EditText
                 android:id="@+id/requestEdt"
@@ -79,41 +85,80 @@
 
         </FrameLayout>
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <EditText
+                android:id="@+id/reservationDateEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_boader_white_round_box"
+                android:hint="예약 날짜 및 시간을 적어주세요. ex) 12일 오후 6시"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="13sp" />
+
+
+        </FrameLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:text="방문 인원"
             android:textSize="15sp"
             android:textStyle="bold" />
 
 
         <Spinner
+            android:id="@+id/visitCountSpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/visitCountSpinner"
+            android:spinnerMode="dialog"></Spinner>
 
-
-        </Spinner>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="33dp"
-            android:layout_marginRight="33dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
             android:orientation="vertical"
-            android:padding="25dp">
+            android:padding="10dp">
+
 
 
             <TextView
+                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="예약신청 버튼을 누르시면 접수됩니다! \n변동사항이 있으면 전화로 연락주세요!"/>
+                android:text="당일 예약은 확인이 늦을 수도 있으니\n가급적 전화로 부탁드립니다!"
+                android:textSize="16sp" />
 
 
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="예약신청 버튼을 누르시면 접수됩니다.\n변동사항이 있을 시 전화주세요!"
+                android:textSize="15sp" />
 
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
 
         </LinearLayout>
 
@@ -127,7 +172,7 @@
             android:layout_marginTop="25dp">
 
             <Button
-                android:id="@+id/moveToStoreListBtn"
+                android:id="@+id/reservationOkBtn"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/gray_boader_gray_round_box"
