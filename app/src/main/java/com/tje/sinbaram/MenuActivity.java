@@ -2,6 +2,7 @@ package com.tje.sinbaram;
 
 import android.os.Bundle;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.TabWidget;
@@ -13,6 +14,14 @@ public class MenuActivity extends BaseActivity {
     private android.widget.LinearLayout tab2;
     private android.widget.FrameLayout tabcontent;
     private android.widget.TabHost tabHost;
+    private android.widget.ImageView ori01;
+    private android.widget.ImageView ori02;
+    private android.widget.ImageView ori03;
+    private android.widget.ImageView ori04;
+    private android.widget.ImageView ori05;
+    private android.widget.ImageView ori06;
+    private android.widget.ImageView side01;
+    private android.widget.ImageView side02;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +49,6 @@ public class MenuActivity extends BaseActivity {
     @Override
     public void setupEvents() {
 
-
     }
 
     @Override
@@ -53,7 +61,15 @@ public class MenuActivity extends BaseActivity {
         this.tabHost = (TabHost) findViewById(R.id.tabHost);
         this.tabcontent = (FrameLayout) findViewById(android.R.id.tabcontent);
         this.tab2 = (LinearLayout) findViewById(R.id.tab2);
+        this.side02 = (ImageView) findViewById(R.id.side02);
+        this.side01 = (ImageView) findViewById(R.id.side01);
         this.tab1 = (LinearLayout) findViewById(R.id.tab1);
+        this.ori06 = (ImageView) findViewById(R.id.ori06);
+        this.ori05 = (ImageView) findViewById(R.id.ori05);
+        this.ori04 = (ImageView) findViewById(R.id.ori04);
+        this.ori03 = (ImageView) findViewById(R.id.ori03);
+        this.ori02 = (ImageView) findViewById(R.id.ori02);
+        this.ori01 = (ImageView) findViewById(R.id.ori01);
         this.tabs = (TabWidget) findViewById(android.R.id.tabs);
     }
 }

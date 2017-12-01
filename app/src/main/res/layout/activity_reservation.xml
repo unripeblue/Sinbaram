@@ -25,7 +25,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -85,24 +85,69 @@
 
         </FrameLayout>
 
-        <FrameLayout
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
 
-            <EditText
-                android:id="@+id/reservationDateEdt"
-                android:layout_width="match_parent"
+            <Button
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/selectDateBtn"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/gray_boader_white_round_box"
-                android:hint="예약 날짜 및 시간을 적어주세요. ex) 12일 오후 6시"
+                android:layout_weight="1"
+                android:hint="예약날짜 정하기"
                 android:inputType="text"
                 android:padding="12dp"
-                android:textSize="13sp" />
+                android:textSize="14sp" />
+
+            <Button
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/selectTimeBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="시간 정하기"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textSize="14sp" />
 
 
-        </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="날짜를 입력해 주세요."
+                android:id="@+id/reserveDayTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="시간을 입력해 주세요."
+                android:id="@+id/reserveTimeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+
 
         <TextView
             android:layout_width="match_parent"

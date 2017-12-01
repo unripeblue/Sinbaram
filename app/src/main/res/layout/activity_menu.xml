@@ -55,10 +55,10 @@
                                 android:textStyle="bold" />
 
                             <ImageView
+                                android:id="@+id/ori01"
                                 android:layout_width="match_parent"
                                 android:layout_height="190dp"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/ori_01" />
+                                android:layout_marginTop="5dp"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -78,10 +78,10 @@
                                 android:textStyle="bold" />
 
                             <ImageView
+                                android:id="@+id/ori02"
                                 android:layout_width="match_parent"
                                 android:layout_height="190dp"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/ori_02" />
+                                android:layout_marginTop="5dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -101,10 +101,10 @@
                                 android:textStyle="bold" />
 
                             <ImageView
+                                android:id="@+id/ori03"
                                 android:layout_width="match_parent"
                                 android:layout_height="190dp"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/ori_03" />
+                                android:layout_marginTop="5dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -123,10 +123,10 @@
                                 android:textStyle="bold" />
 
                             <ImageView
+                                android:id="@+id/ori04"
                                 android:layout_width="match_parent"
                                 android:layout_height="190dp"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/ori_04" />
+                                android:layout_marginTop="5dp"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -145,10 +145,10 @@
                                 android:textStyle="bold" />
 
                             <ImageView
+                                android:id="@+id/ori05"
                                 android:layout_width="match_parent"
                                 android:layout_height="190dp"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/ori_05" />
+                                android:layout_marginTop="5dp"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -167,10 +167,10 @@
                                 android:textStyle="bold" />
 
                             <ImageView
+                                android:id="@+id/ori06"
                                 android:layout_width="match_parent"
                                 android:layout_height="190dp"
-                                android:layout_marginTop="5dp"
-                                android:src="@drawable/ori_06" />
+                                android:layout_marginTop="5dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -202,7 +202,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="190dp"
                                 android:layout_marginTop="5dp"
-                                android:src="@drawable/side_01" />
+                                android:id="@+id/side01"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -225,7 +225,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="190dp"
                                 android:layout_marginTop="5dp"
-                                android:src="@drawable/side_02" />
+                                android:id="@+id/side02"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
