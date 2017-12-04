@@ -1,9 +1,20 @@
 package com.tje.sinbaram;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
+
+import com.tje.sinbaram.adapter.CouponAdapter;
+import com.tje.sinbaram.data.Coupon;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class EventActivity extends BaseActivity {
+
+    private android.widget.ListView couponListView;
+
+    List<Coupon> couponList = new ArrayList<>();
+    CouponAdapter mCouponAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +32,12 @@ public class EventActivity extends BaseActivity {
 
     @Override
     public void setValues() {
-
+        mCouponAdapter = new CouponAdapter(mContext, couponList);
+        couponListView.setAdapter(mCouponAdapter);
     }
 
     @Override
     public void bindViews() {
-
+        this.couponListView = (ListView) findViewById(R.id.couponListView);
     }
 }

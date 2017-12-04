@@ -9,10 +9,28 @@
     tools:context="com.tje.sinbaram.EventActivity">
 
     <TextView
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="준비중 입니다."/>
+        android:textStyle="bold"
+        android:text="이달의 쿠폰"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/couponListView">
+
+
+        </ListView>
+
+    </LinearLayout>
 
 </LinearLayout>

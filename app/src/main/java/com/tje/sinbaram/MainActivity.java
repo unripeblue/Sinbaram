@@ -1,5 +1,6 @@
 package com.tje.sinbaram;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -51,11 +52,22 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        settingBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, MyInfoActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
     public void setValues() {
         Glide.with(this).load(R.drawable.main_img).into(mainImg);
+        Glide.with(this).load(R.drawable.hall_img).into(hallImg);
+        Glide.with(this).load(R.drawable.room_img).into(roomImg);
+        Glide.with(this).load(R.drawable.table_img).into(tableImg);
 
 
     }

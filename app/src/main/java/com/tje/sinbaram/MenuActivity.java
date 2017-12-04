@@ -7,6 +7,8 @@ import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.TabWidget;
 
+import com.bumptech.glide.Glide;
+
 public class MenuActivity extends BaseActivity {
 
     private android.widget.TabWidget tabs;
@@ -53,7 +55,14 @@ public class MenuActivity extends BaseActivity {
 
     @Override
     public void setValues() {
-
+        Glide.with(this).load(R.drawable.ori_01).into(ori01);
+        Glide.with(this).load(R.drawable.ori_02).into(ori02);
+        Glide.with(this).load(R.drawable.ori_03).into(ori03);
+        Glide.with(this).load(R.drawable.ori_04).into(ori04);
+        Glide.with(this).load(R.drawable.ori_05).into(ori05);
+        Glide.with(this).load(R.drawable.ori_06).into(ori06);
+        Glide.with(this).load(R.drawable.side_01).into(side01);
+        Glide.with(this).load(R.drawable.side_02).into(side02);
     }
 
     @Override

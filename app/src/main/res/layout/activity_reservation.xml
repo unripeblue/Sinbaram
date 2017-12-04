@@ -99,7 +99,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="예약날짜 정하기"
+                android:hint="날짜를 입력해 주세요."
                 android:inputType="text"
                 android:padding="12dp"
                 android:textSize="14sp" />
@@ -111,38 +111,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="시간 정하기"
+                android:hint="시간을 입력해 주세요."
                 android:inputType="text"
                 android:padding="12dp"
                 android:textSize="14sp" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:textStyle="bold"
-                android:text="날짜를 입력해 주세요."
-                android:id="@+id/reserveDayTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
-
-            <TextView
-                android:textStyle="bold"
-                android:layout_marginLeft="10dp"
-                android:text="시간을 입력해 주세요."
-                android:id="@+id/reserveTimeTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
 
 
         </LinearLayout>

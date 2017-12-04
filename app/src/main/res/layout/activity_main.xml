@@ -92,6 +92,16 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="개인정보 수정은 오른쪽 상단 버튼을 눌러 주세요!  ↑"
+                                android:textColor="#3333FF"
+                                android:textSize="13.5sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_margin="15dp"
                                 android:text="가게 소개"
                                 android:textColor="@color/black"

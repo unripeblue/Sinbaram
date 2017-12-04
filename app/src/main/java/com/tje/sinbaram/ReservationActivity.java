@@ -14,7 +14,6 @@ import android.widget.TimePicker;
 import com.tje.sinbaram.util.DateTimeUtil;
 
 import java.util.Calendar;
-import java.util.GregorianCalendar;
 
 public class ReservationActivity extends BaseActivity {
 
@@ -27,9 +26,7 @@ public class ReservationActivity extends BaseActivity {
     private android.widget.Spinner visitCountSpinner;
     private android.widget.Button reservationOkBtn;
     private Button selectDateBtn;
-    private android.widget.TextView reserveDayTxt;
     private Button selectTimeBtn;
-    private TextView reserveTimeTxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +52,7 @@ public class ReservationActivity extends BaseActivity {
                         mReservationDate.set(Calendar.MONTH, month);
                         mReservationDate.set(Calendar.DAY_OF_MONTH, dayOfMonth);
 
-                        reserveDayTxt.setText(DateTimeUtil.getDateString(mReservationDate));
+                        selectDateBtn.setText(DateTimeUtil.getDateString(mReservationDate));
 
 
                     }
@@ -77,7 +74,7 @@ public class ReservationActivity extends BaseActivity {
                         mReservationDate.set(Calendar.HOUR_OF_DAY, hourOfDay);
                         mReservationDate.set(Calendar.MINUTE, minute);
 
-                        reserveTimeTxt.setText(DateTimeUtil.getTimeString(mReservationDate));
+                        selectTimeBtn.setText(DateTimeUtil.getTimeString(mReservationDate));
 
                     }
                 }, mReservationDate.get(Calendar.HOUR_OF_DAY),
@@ -96,8 +93,6 @@ public class ReservationActivity extends BaseActivity {
     public void bindViews() {
         this.reservationOkBtn = (Button) findViewById(R.id.reservationOkBtn);
         this.visitCountSpinner = (Spinner) findViewById(R.id.visitCountSpinner);
-        this.reserveTimeTxt = (TextView) findViewById(R.id.reserveTimeTxt);
-        this.reserveDayTxt = (TextView) findViewById(R.id.reserveDayTxt);
         this.selectTimeBtn = (Button) findViewById(R.id.selectTimeBtn);
         this.selectDateBtn = (Button) findViewById(R.id.selectDateBtn);
         this.requestEdt = (EditText) findViewById(R.id.requestEdt);
