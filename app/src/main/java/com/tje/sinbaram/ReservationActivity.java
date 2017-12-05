@@ -2,7 +2,11 @@ package com.tje.sinbaram;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -10,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import com.tje.sinbaram.util.DateTimeUtil;
 
@@ -79,6 +84,24 @@ public class ReservationActivity extends BaseActivity {
                     }
                 }, mReservationDate.get(Calendar.HOUR_OF_DAY),
                         mReservationDate.get(Calendar.MINUTE), false).show();
+            }
+        });
+
+        reservationOkBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder ro = new AlertDialog.Builder(mContext);
+                ro.setTitle("예약 확인");
+                ro.setMessage("선택하신 시간으로 예약하시겠습니까?");
+                ro.setPositiveButton("예약하겠습니다.", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(mContext, "완료되었습니다. 메인화면 우측 내 정보 페이지에서 확인해 주세요.", Toast.LENGTH_SHORT).show();
+                        finish();
+                    }
+                });
+                ro.setNegativeButton("취소", null);
+                ro.show();
             }
         });
 

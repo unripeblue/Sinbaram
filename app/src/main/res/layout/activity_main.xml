@@ -221,7 +221,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:tag="memberFragment"
-                tools:layout="@layout/frag_member_navi" />
+                tools:layout="@layout/frag_hamburger_menu" />
         </LinearLayout>
 
 

@@ -25,11 +25,13 @@ public class HamburgerMenuFragment extends Fragment {
     private TextView userPhoneTxt;
     private TextView userMailTxt;
     private TextView userCouponTxt;
+    private LinearLayout reviewLayout;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.frag_member_navi, container, false);
+        View v = inflater.inflate(R.layout.frag_hamburger_menu, container, false);
+        this.reviewLayout = (LinearLayout) v.findViewById(R.id.reviewLayout);
         this.userCouponTxt = (TextView) v.findViewById(R.id.userCouponTxt);
         this.userMailTxt = (TextView) v.findViewById(R.id.userMailTxt);
         this.userPhoneTxt = (TextView) v.findViewById(R.id.userPhoneTxt);
@@ -64,7 +66,15 @@ public class HamburgerMenuFragment extends Fragment {
         eventpageLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), EventActivity.class);
+                Intent intent = new Intent(getActivity(), CouponActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        reviewLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ReviewActivity.class);
                 startActivity(intent);
             }
         });

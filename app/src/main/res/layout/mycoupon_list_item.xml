@@ -87,7 +87,7 @@
                         android:layout_width="100sp"
                         android:layout_height="20sp"
                         android:layout_marginLeft="100dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/nouse" />
 
                     <ImageView
                         android:visibility="gone"
@@ -95,7 +95,7 @@
                         android:layout_width="100sp"
                         android:layout_height="20sp"
                         android:layout_marginLeft="100dp"
-                        android:src="@mipmap/ic_launcher_round" />
+                        android:src="@drawable/use" />
 
                 </FrameLayout>
 
