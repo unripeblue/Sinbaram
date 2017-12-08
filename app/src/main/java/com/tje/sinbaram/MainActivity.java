@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
 import com.bumptech.glide.Glide;
+import com.tje.sinbaram.util.ContextUtil;
 
 public class MainActivity extends BaseActivity {
 
@@ -32,8 +33,9 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bindViews();
-        setupEvents();
         setValues();
+        setupEvents();
+
     }
 
     @Override
@@ -55,8 +57,15 @@ public class MainActivity extends BaseActivity {
         settingBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, MyInfoActivity.class);
-                startActivity(intent);
+
+                if (ContextUtil.getLoginUser(mContext).getId() ==1) {
+                    Intent intent = new Intent(mContext, ManageActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    Intent intent = new Intent(mContext, MyInfoActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -68,6 +77,7 @@ public class MainActivity extends BaseActivity {
         Glide.with(this).load(R.drawable.hall_img).into(hallImg);
         Glide.with(this).load(R.drawable.room_img).into(roomImg);
         Glide.with(this).load(R.drawable.table_img).into(tableImg);
+
 
 
     }

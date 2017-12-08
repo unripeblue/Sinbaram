@@ -17,7 +17,7 @@ import java.util.Map;
 public class ServerUtil {
 
     private static final String TAG = ServerUtil.class.getSimpleName();
-    private final static String BASE_URL = "http://13.124.238.13/"; // 라이브서버
+    private final static String BASE_URL = "http://192.168.20.11:8080/sinbaram/"; // 라이브서버
 //    private final static String BASE_URL = "http://share-tdd.com/"; // 개발서버
 
     public interface JsonResponseHandler {
@@ -29,12 +29,13 @@ public class ServerUtil {
 
 
     // 회원 가입시 아이디 중복 체크
-    public static void check_dupl_id(final Context context, final String id, final JsonResponseHandler handler) {
-        String url = BASE_URL+"mobile/check_dupl_id";
+    public static void login(final Context context, String userid, String password, final JsonResponseHandler handler) {
+        String url = BASE_URL+"login";
         //		String registrationId = ContextUtil.getRegistrationId(context);
 
         Map<String, String> data = new HashMap<String, String>();
-        data.put("user_id", id);
+        data.put("email", userid);
+        data.put("password", password);
 
         AsyncHttpRequest.post(context, url,  data, false, new AsyncHttpRequest.HttpResponseHandler() {
 
@@ -75,15 +76,14 @@ public class ServerUtil {
                                final String profilePhoto,
                                final String phoneNum,
                                final JsonResponseHandler handler) {
-        String url = BASE_URL+"mobile/sign_up";
+        String url = BASE_URL+"sign_up";
         //		String registrationId = ContextUtil.getRegistrationId(context);
 
         Map<String, String> data = new HashMap<String, String>();
         data.put("user_id", id);
         data.put("password", pw);
         data.put("name", name);
-        data.put("profile_photo", profilePhoto);
-        data.put("phone_num", phoneNum);
+        data.put("phone", phoneNum);
 
         AsyncHttpRequest.post(context, url,  data, true, new AsyncHttpRequest.HttpResponseHandler() {
 

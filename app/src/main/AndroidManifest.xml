@@ -14,6 +14,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <service android:name=".fcm.MyFCMService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".fcm.MyFCMIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
@@ -27,9 +40,10 @@
         <activity android:name=".ReservationActivity" />
         <activity android:name=".CouponActivity" />
         <activity android:name=".ReservationListActivity" />
-        <activity android:name=".MyCouponActivity" />
         <activity android:name=".MyInfoActivity" />
-        <activity android:name=".ReviewActivity"></activity>
+        <activity android:name=".ReviewActivity" />
+        <activity android:name=".ReviewWriteActivity" />
+        <activity android:name=".ManageActivity"></activity>
     </application>
 
 </manifest>

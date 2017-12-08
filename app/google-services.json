@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "951163080140",
+    "firebase_url": "https://sinbaram-4e179.firebaseio.com",
+    "project_id": "sinbaram-4e179",
+    "storage_bucket": "sinbaram-4e179.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951163080140:android:585fc88442bfc1db",
+        "android_client_info": {
+          "package_name": "com.tje.sinbaram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951163080140-b04kmo8h8hlksqbuo9pl3ujakco24525.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tje.sinbaram",
+            "certificate_hash": "e0566df655f4057b1b122f02a47e40d7e49da656"
+          }
+        },
+        {
+          "client_id": "951163080140-17b051i0c74gtgt4gh8ctu7aa6df5eht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-zsegvh2O4mn35cMFfqX-ljISYINDpsQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951163080140-17b051i0c74gtgt4gh8ctu7aa6df5eht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
