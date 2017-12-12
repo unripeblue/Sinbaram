@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.tje.sinbaram.util.ContextUtil;
@@ -58,7 +59,10 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
 
-                if (ContextUtil.getLoginUser(mContext).getId() ==1) {
+                if (ContextUtil.getLoginUser(mContext) == null) {
+                    Toast.makeText(mContext, "회원 전용 기능입니다. 로그인해 주세요.", Toast.LENGTH_SHORT).show();
+                }
+                else if (ContextUtil.getLoginUser(mContext).getId() ==1) {
                     Intent intent = new Intent(mContext, ManageActivity.class);
                     startActivity(intent);
                 }

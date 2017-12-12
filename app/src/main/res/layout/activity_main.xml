@@ -153,7 +153,8 @@
                                 android:id="@+id/tableImg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="350dp"
-                                android:layout_marginTop="10dp" />
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -163,6 +164,7 @@
                                 android:textColor="@color/black" />
 
                             <ImageView
+                                android:layout_gravity="center"
                                 android:id="@+id/roomImg"
                                 android:layout_width="wrap_content"
                                 android:layout_height="350dp"

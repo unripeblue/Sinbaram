@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.tje.sinbaram.adapter.MyCouponAdapter;
 import com.tje.sinbaram.data.Coupon;
+import com.tje.sinbaram.util.ContextUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +26,8 @@ public class MyInfoActivity extends BaseActivity {
     private android.widget.TextView nickNameTxt;
     private android.widget.Button checkScheduleBtn;
     private android.widget.Button reservationBtn;
+    private TextView emailTxt;
+    private TextView phoneTxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +55,10 @@ public class MyInfoActivity extends BaseActivity {
     public void setValues() {
         mCouponAdapter = new MyCouponAdapter(mContext, couponList);
         myCouponListView.setAdapter(mCouponAdapter);
+
+        nameTxt.setText(ContextUtil.getLoginUser(mContext).getUserName());
+        emailTxt.setText(ContextUtil.getLoginUser(mContext).getUserEmailAddress());
+        phoneTxt.setText(ContextUtil.getLoginUser(mContext).getUserPhoneNum());
     }
 
     @Override
@@ -59,8 +66,8 @@ public class MyInfoActivity extends BaseActivity {
         this.reservationBtn = (Button) findViewById(R.id.reservationBtn);
         this.checkScheduleBtn = (Button) findViewById(R.id.checkScheduleBtn);
         this.myCouponListView = (ListView) findViewById(R.id.myCouponListView);
-        this.nickNameTxt = (TextView) findViewById(R.id.nickNameTxt);
+        this.phoneTxt = (TextView) findViewById(R.id.phoneTxt);
+        this.emailTxt = (TextView) findViewById(R.id.emailTxt);
         this.nameTxt = (TextView) findViewById(R.id.nameTxt);
-        this.majorAgeTxt = (TextView) findViewById(R.id.majorAgeTxt);
     }
 }

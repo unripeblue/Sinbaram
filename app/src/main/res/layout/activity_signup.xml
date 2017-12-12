@@ -45,7 +45,7 @@
             android:layout_marginTop="20dp">
 
             <EditText
-                android:id="@+id/userIdEdt"
+                android:id="@+id/idEdt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gray_boader_white_round_box"
@@ -80,7 +80,7 @@
             android:layout_height="45dp">
 
             <EditText
-                android:id="@+id/userNameEdt"
+                android:id="@+id/nameEdt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gray_boader_white_round_box"
@@ -133,7 +133,7 @@
             android:layout_height="45dp">
 
             <EditText
-                android:id="@+id/phoneNumEdt"
+                android:id="@+id/phoneEdt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gray_boader_white_round_box"

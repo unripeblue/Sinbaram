@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,8 @@ import org.json.JSONObject;
 
 public class LoginActivity extends BaseActivity {
 
+    public static LoginActivity myActivity;
+
     private android.widget.EditText idEdt;
     private android.widget.EditText pwEdt;
     private android.widget.CheckBox autoLoginCheckBox;
@@ -34,6 +37,7 @@ public class LoginActivity extends BaseActivity {
         bindViews();
         setValues();
         setupEvents();
+        myActivity = this;
     }
 
     @Override
@@ -43,7 +47,6 @@ public class LoginActivity extends BaseActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, SignupActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -82,6 +85,9 @@ public class LoginActivity extends BaseActivity {
                                 startActivity(intent);
                                 finish();
 
+                            }
+                            else {
+                                Toast.makeText(mContext, "아이디 혹은 비밀번호가 맞지 않습니다.", Toast.LENGTH_SHORT).show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();

@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.tje.sinbaram.data.User;
 import com.tje.sinbaram.util.ContextUtil;
@@ -57,13 +58,16 @@ public class HamburgerMenuFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        if (ContextUtil.getLoginUser(getActivity()).getUserName().equals(null)) {
-
+        if (ContextUtil.getLoginUser(getActivity()) == null) {
+            logoutBtn.setText("로그인 화면으로");
+        } else {
+            logoutBtn.setText("로그아웃");
+            userMailTxt.setText(myInfo.getUserEmailAddress());
+            userNameTxt.setText(myInfo.getUserName());
+            userPhoneTxt.setText(myInfo.getUserPhoneNum());
         }
-        else {
-            userMailTxt.setText(myInfo.getUserName());
-        }
 
+       
 
 
         logoutBtn.setOnClickListener(new View.OnClickListener() {
@@ -94,16 +98,25 @@ public class HamburgerMenuFragment extends Fragment {
         eventpageLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), CouponActivity.class);
-                startActivity(intent);
+                if (ContextUtil.getLoginUser(getActivity()) == null) {
+                    Toast.makeText(getActivity(), "회원 전용 기능입니다. 로그인해 주세요.", Toast.LENGTH_SHORT).show();
+                } else {
+                    Intent intent = new Intent(getActivity(), CouponActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
         reviewLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ReviewActivity.class);
-                startActivity(intent);
+
+                if (ContextUtil.getLoginUser(getActivity()) == null) {
+                    Toast.makeText(getActivity(), "회원 전용 기능입니다. 로그인해 주세요.", Toast.LENGTH_SHORT).show();
+                } else {
+                    Intent intent = new Intent(getActivity(), ReviewActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 

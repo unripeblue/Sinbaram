@@ -15,14 +15,29 @@
             android:layout_height="4dp"
             android:background="#000000" />
 
-        <TextView
-            android:id="@+id/couponNameTxt"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:text="모든 구매 금액 10% 할인 쿠폰"
-            android:textColor="#000000"
-            android:textSize="20sp" />
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/couponImg"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/couponNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="음료수 무료 쿠폰"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
 
         <TextView
             android:layout_width="match_parent"
@@ -47,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="2018년 12월 1일" />
+                android:text="2018년 1월 31일" />
 
         </FrameLayout>
 

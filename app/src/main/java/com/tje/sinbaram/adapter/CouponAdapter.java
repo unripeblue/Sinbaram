@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.tje.sinbaram.R;
 import com.tje.sinbaram.data.Coupon;
 
@@ -45,7 +46,11 @@ public class CouponAdapter extends ArrayAdapter<Coupon> {
             row = inf.inflate(R.layout.coupon_list_item, null);
         }
 
+        final ImageView couponImg = (ImageView) row.findViewById(R.id.couponImg);
         final Button getCouponBtn = (Button) row.findViewById(R.id.getCouponBtn);
+
+        Glide.with(mContext).load("http://news.tongplus.com/site/data/img_dir/2016/11/25/2016112502091_0.jpg").into(couponImg);
+
 
         getCouponBtn.setOnClickListener(new View.OnClickListener() {
             @Override

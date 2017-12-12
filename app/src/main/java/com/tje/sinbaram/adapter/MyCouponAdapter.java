@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.bumptech.glide.Glide;
 import com.tje.sinbaram.R;
 import com.tje.sinbaram.data.Coupon;
 
@@ -47,6 +48,9 @@ public class MyCouponAdapter extends ArrayAdapter<Coupon> {
         final ImageView useImg = (ImageView) row.findViewById(R.id.useImg);
         final ImageView noUseImg = (ImageView) row.findViewById(R.id.noUseImg);
         final LinearLayout couponBackground = (LinearLayout) row.findViewById(R.id.couponBackground);
+        final ImageView couponImg = (ImageView) row.findViewById(R.id.couponImg);
+
+        Glide.with(mContext).load("http://news.tongplus.com/site/data/img_dir/2016/11/25/2016112502091_0.jpg").into(couponImg);
 
         noUseImg.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -8,6 +8,11 @@ import android.widget.ListView;
 
 import com.tje.sinbaram.adapter.ReviewAdapter;
 import com.tje.sinbaram.data.Review;
+import com.tje.sinbaram.util.ServerUtil;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +52,24 @@ public class ReviewActivity extends BaseActivity {
     public void setValues() {
         mReviewAdapter = new ReviewAdapter(mContext, reviewList);
         reviewListView.setAdapter(mReviewAdapter);
+
+        ServerUtil.review(mContext, new ServerUtil.JsonResponseHandler() {
+            @Override
+            public void onResponse(JSONObject json) {
+                try {
+                    JSONArray reviews = json.getJSONArray("reviews");
+                    for (int i=0; i<reviews.length(); i++) {
+                        JSONObject review = reviews.getJSONObject(i);
+                        Review tempReview = Review.getUserFromJsonObject(review);
+                        reviewList.add(tempReview);
+                    }
+                    mReviewAdapter.notifyDataSetChanged();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
     }
 
     @Override

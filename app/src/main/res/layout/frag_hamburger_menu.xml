@@ -79,7 +79,7 @@
             android:weightSum="1">
 
             <LinearLayout
-                android:layout_width="120dp"
+                android:layout_width="210dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.76"
                 android:gravity="center"
